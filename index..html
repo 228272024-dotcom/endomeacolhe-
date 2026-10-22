@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6d4a86">
+<title>EndoAcolhe | Questionário e dicas educativas</title>
+<style>
+:root{--purple:#6d4a86;--deep:#3d2851;--lilac:#f0e8f7;--pink:#f8e9ee;--ink:#302b35;--muted:#6f6876;--white:#fff;--line:#e8deed;--green:#e7f3ed}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}a{color:var(--purple)}.wrap{width:min(1100px,92%);margin:auto}.topbar{background:var(--deep);color:#fff;text-align:center;padding:8px 12px;font-size:.88rem}.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0}.brand{font-weight:800;color:var(--deep);font-size:1.3rem;text-decoration:none;letter-spacing:-.4px}.brand span{color:#b16c91}.navlinks{display:flex;gap:18px;flex-wrap:wrap}.navlinks a{text-decoration:none;color:var(--ink);font-size:.93rem;font-weight:700}.hero{background:linear-gradient(120deg,#f6effa,#fff3f5);padding:58px 0 54px}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:35px}.eyebrow{color:var(--purple);font-size:.82rem;font-weight:800;letter-spacing:1.2px;text-transform:uppercase}.hero h1{font-size:clamp(2.1rem,5vw,3.7rem);line-height:1.08;letter-spacing:-1.5px;margin:12px 0 18px;color:var(--deep)}.hero p{font-size:1.08rem;color:#514858;max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-block;padding:12px 18px;border-radius:12px;background:var(--purple);color:#fff;text-decoration:none;font-weight:700;border:2px solid var(--purple);cursor:pointer;font-size:.98rem}.btn.secondary{background:transparent;color:var(--purple)}.hero-art{background:#fff;border:1px solid #eaddec;border-radius:28px;padding:28px;text-align:center;box-shadow:0 15px 40px #57366d12}.flower{font-size:5.5rem;line-height:1.2}.hero-art strong{display:block;color:var(--deep);font-size:1.15rem;margin-top:10px}.hero-art p{font-size:.95rem;margin-bottom:0}.section{padding:58px 0}.section.soft{background:#fcf9fd}.section h2{font-size:clamp(1.7rem,3vw,2.35rem);line-height:1.2;color:var(--deep);margin:8px 0 12px}.lead{max-width:760px;color:var(--muted);font-size:1.04rem}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}.card{border:1px solid var(--line);border-radius:18px;padding:22px;background:#fff}.card .emoji{font-size:1.8rem}.card h3{margin:10px 0 8px;color:var(--deep);font-size:1.12rem}.card p{margin:0;color:var(--muted)}.notice{background:var(--green);border-radius:16px;padding:18px 20px;margin-top:24px}.notice strong{color:#245c43}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:24px}.panel{border-radius:18px;padding:24px;background:var(--lilac)}.panel.pink{background:var(--pink)}.panel h3{margin-top:0;color:var(--deep)}ul{padding-left:22px}li{margin:7px 0}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}.step{border-top:4px solid #b68acb;background:#fff;border-radius:12px;padding:20px;box-shadow:0 4px 18px #36213f0b}.step b{display:block;color:var(--deep);margin-bottom:6px}.formbox{max-width:760px;background:#fff;border:1px solid var(--line);padding:24px;border-radius:18px;margin-top:24px}.field{margin:14px 0}.field label{display:block;font-weight:700;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;padding:12px;border:1px solid #cfc3d6;border-radius:10px;font:inherit;background:#fff;color:var(--ink)}.field textarea{min-height:90px;resize:vertical}.formnote{font-size:.9rem;color:var(--muted)}#result{margin-top:15px;padding:14px;border-radius:10px;background:var(--green);display:none}.faq details{padding:16px 0;border-bottom:1px solid var(--line)}.faq summary{font-weight:700;color:var(--deep);cursor:pointer}.faq p{color:var(--muted)}footer{background:var(--deep);color:#f8f2fb;padding:32px 0}footer p{margin:6px 0;color:#e2d7e9;font-size:.92rem}.footergrid{display:grid;grid-template-columns:1.2fr .8fr;gap:25px}.small{font-size:.84rem;color:var(--muted)}.pill{display:inline-block;border-radius:100px;background:#fff;padding:5px 11px;color:var(--purple);font-size:.82rem;font-weight:700}
+@media(max-width:760px){.nav{align-items:flex-start;flex-direction:column}.navlinks{gap:12px}.hero{padding:38px 0}.hero-grid,.two-col,.footergrid{grid-template-columns:1fr}.hero-art{max-width:420px}.cards,.steps{grid-template-columns:1fr}.section{padding:42px 0}.hero h1{letter-spacing:-.8px}}
+
+.checklist{display:grid;gap:10px;padding:12px;background:#fcf9fd;border-radius:12px;border:1px solid var(--line)}
+.checklist label{display:flex;align-items:flex-start;gap:9px;font-weight:400}
+.checklist input{margin-top:6px;accent-color:var(--purple)}
+#result h3{color:var(--deep);margin-top:0}
+#result ul{margin-bottom:8px}
+
+</style>
+</head>
+<body>
+<div class="topbar">Projeto educativo de extensão • Fisioterapia</div>
+<header class="wrap nav">
+  <a class="brand" href="#inicio">Endo<span>Acolhe</span></a>
+  <nav class="navlinks" aria-label="Navegação principal">
+    <a href="#entenda">Entenda</a><a href="#sintomas">Sintomas</a><a href="#fisio">Fisioterapia</a><a href="#registro">Meu registro</a>
+  </nav>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Informação • cuidado • acolhimento</span>
+      <h1>Conhecimento também é uma forma de cuidado.</h1>
+      <p>Um espaço educativo para entender a endometriose, reconhecer sinais importantes e conhecer como a equipe de saúde — incluindo a fisioterapia — pode contribuir para a qualidade de vida.</p>
+      <div class="actions"><a class="btn" href="#entenda">Conheça a endometriose</a><a class="btn secondary" href="#fisio">Fisioterapia e cuidado</a></div>
+    </div>
+    <aside class="hero-art">
+      <div class="flower" aria-hidden="true">🌷</div>
+      <span class="pill">Você merece ser ouvida</span>
+      <strong>Informação sem julgamento</strong>
+      <p>Cada pessoa vive os sintomas de uma maneira. Acolhimento e avaliação individual fazem diferença.</p>
+    </aside>
+  </div>
+</section>
+<section class="section" id="entenda">
+  <div class="wrap">
+    <span class="eyebrow">01 • Entenda</span>
+    <h2>O que é endometriose?</h2>
+    <p class="lead">A endometriose é uma condição crônica em que um tecido semelhante ao revestimento interno do útero cresce fora dele. Pode estar associada a dor e outros sintomas, mas a experiência varia de pessoa para pessoa.</p>
+    <div class="cards">
+      <article class="card"><div class="emoji">🧠</div><h3>Não é “só cólica”</h3><p>A dor pode interferir nos estudos, no trabalho, no sono, nas atividades físicas e na vida social.</p></article>
+      <article class="card"><div class="emoji">🩺</div><h3>Procure avaliação</h3><p>Dores intensas ou persistentes merecem atenção de um profissional de saúde. Não é preciso enfrentar tudo sem ajuda.</p></article>
+      <article class="card"><div class="emoji">🤝</div><h3>Cuidado individualizado</h3><p>Os sintomas e necessidades são diferentes. O plano de cuidado deve ser construído com a pessoa e a equipe de saúde.</p></article>
+    </div>
+  </div>
+</section>
+<section class="section soft" id="sintomas">
+  <div class="wrap">
+    <span class="eyebrow">02 • Sinais e sintomas</span>
+    <h2>Quais sinais podem aparecer?</h2>
+    <p class="lead">A presença ou ausência de um sintoma não confirma nem descarta endometriose. Somente uma avaliação clínica pode orientar os próximos passos.</p>
+    <div class="two-col">
+      <div class="panel"><h3>Sintomas possíveis</h3><ul><li>Cólicas menstruais intensas;</li><li>Dor pélvica persistente ou recorrente;</li><li>Dor durante ou após a relação sexual;</li><li>Dor ao evacuar ou urinar, especialmente no período menstrual;</li><li>Cansaço e dificuldade para realizar atividades habituais;</li><li>Dificuldade para engravidar em algumas pessoas.</li></ul></div>
+      <div class="panel pink"><h3>Quando buscar ajuda?</h3><p>Converse com um profissional de saúde se a dor é frequente, intensa ou atrapalha sua rotina. Procure atendimento urgente diante de dor súbita muito forte, desmaio, febre ou sangramento intenso, especialmente se houver possibilidade de gravidez.</p><p><strong>Importante:</strong> não se automedique nem interrompa um tratamento sem orientação profissional.</p></div>
+    </div>
+  </div>
+</section>
+<section class="section" id="fisio">
+  <div class="wrap">
+    <span class="eyebrow">03 • Fisioterapia</span>
+    <h2>Como a fisioterapia pode contribuir?</h2>
+    <p class="lead">A fisioterapia pode fazer parte do cuidado multidisciplinar para algumas pessoas com endometriose, conforme os sintomas, a avaliação e os objetivos individuais. Ela não substitui a avaliação médica.</p>
+    <div class="steps">
+      <div class="step"><b>1. Avaliar</b>Compreender dor, mobilidade, atividades do dia a dia e possíveis alterações da função do assoalho pélvico.</div>
+      <div class="step"><b>2. Planejar</b>Definir objetivos junto com a pessoa e, quando indicado, combinar educação, estratégias de movimento e técnicas fisioterapêuticas individualizadas.</div>
+      <div class="step"><b>3. Acompanhar</b>Observar a evolução dos sintomas e da funcionalidade e ajustar o plano em conjunto com a equipe de saúde.</div>
+    </div>
+    <div class="notice"><strong>Não existe um exercício único para todas as pessoas.</strong> Exercícios e técnicas devem ser indicados por profissional habilitado após avaliação individual.</div>
+  </div>
+</section>
+<section class="section soft" id="registro">
+  <div class="wrap">
+    <span class="eyebrow">04 • Questionário educativo</span>
+    <h2>Conte como você tem se sentido</h2>
+    <p class="lead">Responda às perguntas opcionais abaixo para receber informações educativas relacionadas às suas respostas. Este questionário não diagnostica endometriose e não substitui uma consulta.</p>
+    <div class="formbox">
+      <form id="symptomForm">
+        <div class="field"><label for="periodPain">1. Você sente cólica menstrual?</label>
+          <select id="periodPain" required><option value="">Selecione</option><option value="none">Não ou raramente</option><option value="mild">Às vezes, leve</option><option value="moderate">Frequentemente ou moderada</option><option value="severe">Muito intensa ou limita minhas atividades</option></select>
+        </div>
+        <div class="field"><label for="pelvicPain">2. Você sente dor pélvica fora do período menstrual?</label>
+          <select id="pelvicPain" required><option value="">Selecione</option><option value="no">Não</option><option value="sometimes">Às vezes</option><option value="often">Frequentemente</option></select>
+        </div>
+        <div class="field"><label for="otherSymptoms">3. Você percebe algum destes sintomas? (Pode marcar mais de um)</label>
+          <div class="checklist">
+            <label><input type="checkbox" name="symptom" value="Dor ao evacuar ou urinar"> Dor ao evacuar ou urinar</label>
+            <label><input type="checkbox" name="symptom" value="Dor durante ou após relação sexual"> Dor durante ou após relação sexual</label>
+            <label><input type="checkbox" name="symptom" value="Cansaço ou dificuldade nas atividades diárias"> Cansaço ou dificuldade nas atividades diárias</label>
+            <label><input type="checkbox" name="symptom" value="Nenhum desses sintomas"> Nenhum desses sintomas</label>
+          </div>
+        </div>
+        <div class="field"><label for="impact">4. Quanto os sintomas interferem na sua rotina?</label>
+          <select id="impact" required><option value="">Selecione</option><option value="none">Não interferem</option><option value="some">Um pouco</option><option value="moderate">Moderadamente</option><option value="high">Muito</option></select>
+        </div>
+        <div class="field"><label for="care">5. Você já conversou com um profissional de saúde sobre esses sintomas?</label>
+          <select id="care" required><option value="">Selecione</option><option value="yes">Sim</option><option value="no">Ainda não</option><option value="scheduled">Tenho consulta marcada</option></select>
+        </div>
+        <button class="btn" type="submit">Ver minhas dicas educativas</button>
+        <p class="formnote">Privacidade: não solicitamos nome, CPF ou contato. Neste protótipo, as respostas são processadas no seu navegador e não são enviadas a um servidor. Evite inserir dados pessoais.</p>
+      </form>
+      <div id="result" role="status" aria-live="polite" style="display:none"></div>
+    </div>
+  </div>
+</section>
+<section class="section" id="duvidas">
+  <div class="wrap faq">
+    <span class="eyebrow">05 • Dúvidas frequentes</span>
+    <h2>O que é importante lembrar?</h2>
+    <details><summary>Ter cólica forte significa que tenho endometriose?</summary><p>Não necessariamente. Existem diferentes causas para dor pélvica. A avaliação profissional é importante para investigar os sintomas.</p></details>
+    <details><summary>A fisioterapia cura a endometriose?</summary><p>A fisioterapia não elimina a doença. Em algumas pessoas, pode ajudar no manejo da dor, da função e das atividades diárias como parte de um cuidado integrado.</p></details>
+    <details><summary>Posso usar o site para receber um diagnóstico?</summary><p>Não. O site é educativo e não substitui consulta, exame ou orientação individual de profissionais de saúde.</p></details>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap footergrid">
+    <div><h2>EndoAcolhe</h2><p>Projeto educativo de extensão em Fisioterapia.</p><p>Integrantes: Laurent e Milene.</p></div>
+    <div><h3>Nota importante</h3><p>Conteúdo informativo, não destinado a diagnosticar ou substituir atendimento profissional. Antes de publicar, revisem o conteúdo com a professora e acrescentem referências científicas confiáveis.</p><p>© Projeto acadêmico — versão demonstrativa</p></div>
+  </div>
+</footer>
+<script>
+document.getElementById('symptomForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const periodPain = document.getElementById('periodPain').value;
+  const pelvicPain = document.getElementById('pelvicPain').value;
+  const impact = document.getElementById('impact').value;
+  const care = document.getElementById('care').value;
+  const symptoms = Array.from(document.querySelectorAll('input[name="symptom"]:checked')).map(x => x.value);
+  const tips = [];
+  if (periodPain === 'moderate' || periodPain === 'severe' || pelvicPain === 'often' || impact === 'moderate' || impact === 'high') {
+    tips.push('Considere marcar uma consulta com um profissional de saúde para conversar sobre os sintomas, especialmente se forem frequentes, intensos ou limitarem suas atividades.');
+  } else {
+    tips.push('Observe como você se sente ao longo do tempo. Se os sintomas aparecerem, persistirem ou começarem a atrapalhar sua rotina, converse com um profissional de saúde.');
+  }
+  if (symptoms.includes('Dor ao evacuar ou urinar') || symptoms.includes('Dor durante ou após relação sexual')) {
+    tips.push('Conte esses sintomas ao profissional de saúde. Informações sobre quando acontecem e como afetam sua rotina podem ajudar na avaliação.');
+  }
+  if (impact === 'moderate' || impact === 'high') {
+    tips.push('Anote quando os sintomas aparecem, o que parece piorá-los e quais atividades ficam difíceis. Esse registro pode ajudar na conversa durante a consulta.');
+  }
+  tips.push('A fisioterapia pode contribuir para o manejo da dor e da funcionalidade em algumas pessoas, após avaliação individual e em conjunto com a equipe de saúde.');
+  tips.push('Priorize atividades confortáveis e respeite seus limites. Não existe um exercício único indicado para todas as pessoas; procure orientação individual antes de iniciar um plano terapêutico.');
+  if (care === 'no') tips.push('Se ainda não procurou atendimento, considere conversar com um profissional de saúde para avaliar suas queixas e discutir os próximos passos.');
+  if (care === 'scheduled') tips.push('Até a consulta, se for confortável, registre a frequência dos sintomas e as dúvidas que deseja levar ao profissional.');
+  const result = document.getElementById('result');
+  result.innerHTML = '<h3>Suas dicas educativas</h3><p>Com base nas respostas, estas informações podem ser úteis:</p><ul>' + tips.map(t => '<li>' + t + '</li>').join('') + '</ul><p><strong>Importante:</strong> este resultado não indica se você tem ou não endometriose e não substitui avaliação profissional.</p><p>Procure atendimento urgente se houver dor súbita muito forte, desmaio, febre ou sangramento intenso, especialmente se houver possibilidade de gravidez.</p><button class="btn secondary" type="button" id="resetForm">Refazer questionário</button>';
+  result.style.display = 'block';
+  result.scrollIntoView({behavior:'smooth', block:'start'});
+  document.getElementById('resetForm').addEventListener('click', function(){
+    document.getElementById('symptomForm').reset();
+    result.style.display = 'none';
+    document.getElementById('registro').scrollIntoView({behavior:'smooth'});
+  });
+});
+</script>
+</body>
+</html>
